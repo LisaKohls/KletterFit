@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CompletedTraining" representedClassName="CompletedTraining" syncable="YES" codeGenerationType="class">
+        <attribute name="finishedTrainingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="finishedTrainingDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finishedTrainingName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ExerciseInTraining" representedClassName="ExerciseInTraining" syncable="YES" codeGenerationType="class">
+        <attribute name="difficulty" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="repetitions" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sets" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="trainingItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainingItem" inverseName="exercises" inverseEntity="TrainingItem"/>
+    </entity>
+    <entity name="Exercises" representedClassName="Exercises" syncable="YES" codeGenerationType="class">
+        <attribute name="exerciseDescription" optional="YES" attributeType="String"/>
+        <attribute name="exerciseMuscleGroup" optional="YES" attributeType="String"/>
+        <attribute name="exerciseName" optional="YES" attributeType="String"/>
+        <attribute name="exerciseTools" optional="YES" attributeType="String"/>
+        <attribute name="exerciseType" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Progress" representedClassName="Progress" syncable="YES" codeGenerationType="class">
+        <attribute name="currentProgress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Route" representedClassName="Route" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="finished" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="routeDescription" optional="YES" attributeType="String"/>
+        <attribute name="tries" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Training" representedClassName="Training" syncable="YES" codeGenerationType="class">
+        <attribute name="trainingDescription" optional="YES" attributeType="String"/>
+        <attribute name="trainingDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="trainingIcon" optional="YES" attributeType="String"/>
+        <attribute name="trainingName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TrainingGoal" representedClassName="TrainingGoal" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="week" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TrainingItem" representedClassName="TrainingItem" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="difficulty" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExerciseInTraining" inverseName="trainingItem" inverseEntity="ExerciseInTraining"/>
+    </entity>
+</model>

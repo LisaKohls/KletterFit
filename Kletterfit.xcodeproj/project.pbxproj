@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3163F462A05391500034D44 /* KletterfitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F452A05391500034D44 /* KletterfitApp.swift */; };
+		B3163F482A05391500034D44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F472A05391500034D44 /* ContentView.swift */; };
+		B3163F4A2A05391700034D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3163F492A05391700034D44 /* Assets.xcassets */; };
+		B3163F4D2A05391700034D44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3163F4C2A05391700034D44 /* Preview Assets.xcassets */; };
+		B3163F522A05391800034D44 /* Kletterfit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3163F502A05391800034D44 /* Kletterfit.xcdatamodeld */; };
+		B3163F5C2A05391800034D44 /* KletterfitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F5B2A05391800034D44 /* KletterfitTests.swift */; };
+		B3163F662A05391800034D44 /* KletterfitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F652A05391800034D44 /* KletterfitUITests.swift */; };
+		B3163F682A05391800034D44 /* KletterfitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3163F672A05391800034D44 /* KletterfitUITestsLaunchTests.swift */; };
+		B33ED7FF2A4251B700198463 /* ExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33ED7FE2A4251B700198463 /* ExerciseCard.swift */; };
+		F927FF6C2A41C0D10011858D /* TrainingFormSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FF6B2A41C0D10011858D /* TrainingFormSectionView.swift */; };
+		F927FF6E2A41C1300011858D /* ExerciseSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FF6D2A41C1300011858D /* ExerciseSectionView.swift */; };
+		F927FF702A41C14D0011858D /* AddedExercisesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FF6F2A41C14D0011858D /* AddedExercisesSectionView.swift */; };
+		F927FF742A41DB6B0011858D /* ViewChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FF732A41DB6B0011858D /* ViewChartItem.swift */; };
+		F927FF7A2A41F07E0011858D /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FF792A41F07E0011858D /* MultipleSelectionRow.swift */; };
+		F927FF7C2A41F8170011858D /* ExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927FF7B2A41F8170011858D /* ExerciseRow.swift */; };
+		F93C372E2A4185D0008300FF /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C372D2A4185D0008300FF /* ExerciseViewModel.swift */; };
+		F93C37372A41870D008300FF /* StatisticItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37362A41870D008300FF /* StatisticItem.swift */; };
+		F93C373A2A418750008300FF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37392A418750008300FF /* DateExtension.swift */; };
+		F93C373E2A41877D008300FF /* KletterfitDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C373D2A41877D008300FF /* KletterfitDataController.swift */; };
+		F93C37412A41879C008300FF /* GradientButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37402A41879C008300FF /* GradientButtonItem.swift */; };
+		F93C37432A4187B3008300FF /* InfoFitnessIconsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37422A4187B3008300FF /* InfoFitnessIconsViewModel.swift */; };
+		F93C37542A418E6A008300FF /* TrainingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37532A418E6A008300FF /* TrainingCard.swift */; };
+		F93C37562A418EBC008300FF /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37552A418EBC008300FF /* GradientButton.swift */; };
+		F93C375C2A419039008300FF /* AddRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37572A419039008300FF /* AddRouteView.swift */; };
+		F93C375D2A419039008300FF /* ClimbingOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37582A419039008300FF /* ClimbingOverView.swift */; };
+		F93C375E2A419039008300FF /* ClimbingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37592A419039008300FF /* ClimbingDetailView.swift */; };
+		F93C375F2A419039008300FF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C375A2A419039008300FF /* ImagePicker.swift */; };
+		F93C37652A4190FD008300FF /* FitnessOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37642A4190FD008300FF /* FitnessOverview.swift */; };
+		F93C376B2A4194AF008300FF /* TrainingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37692A4194AF008300FF /* TrainingsView.swift */; };
+		F93C376C2A4194AF008300FF /* TrainingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C376A2A4194AF008300FF /* TrainingDetailView.swift */; };
+		F93C37702A4194C3008300FF /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C376D2A4194C3008300FF /* AddExerciseView.swift */; };
+		F93C37712A4194C3008300FF /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C376E2A4194C3008300FF /* ExerciseDetailView.swift */; };
+		F93C37722A4194C3008300FF /* ExerciseOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C376F2A4194C3008300FF /* ExerciseOverView.swift */; };
+		F93C37742A4194D4008300FF /* FitnessStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37732A4194D4008300FF /* FitnessStatisticsView.swift */; };
+		F93C37762A419559008300FF /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37752A419559008300FF /* Checkmark.swift */; };
+		F93C37782A41957A008300FF /* ClimbingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37772A41957A008300FF /* ClimbingCard.swift */; };
+		F93C377A2A4195AB008300FF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37792A4195AB008300FF /* SearchBar.swift */; };
+		F93C377C2A4195BE008300FF /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C377B2A4195BE008300FF /* CircularProgressBar.swift */; };
+		F93C37812A419D8A008300FF /* ClimbingStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37802A419D8A008300FF /* ClimbingStatisticView.swift */; };
+		F93C37852A41A13F008300FF /* ImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C37842A41A13F008300FF /* ImagePickerTests.swift */; };
+		F93C378B2A41BC78008300FF /* AddTrainingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C378A2A41BC78008300FF /* AddTrainingSheetView.swift */; };
+		F93C378D2A41BD12008300FF /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93C378C2A41BD12008300FF /* TrainingViewModel.swift */; };
+		F96BB03E2A423BF90077FB97 /* TrainingDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BB03D2A423BF90077FB97 /* TrainingDetailViewModel.swift */; };
+		F96F094E2A424B4C002BC7C7 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F094D2A424B4C002BC7C7 /* FitnessAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3163F582A05391800034D44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3163F3A2A05391500034D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3163F412A05391500034D44;
+			remoteInfo = Kletterfit;
+		};
+		B3163F622A05391800034D44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3163F3A2A05391500034D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3163F412A05391500034D44;
+			remoteInfo = Kletterfit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3163F422A05391500034D44 /* Kletterfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kletterfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3163F452A05391500034D44 /* KletterfitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KletterfitApp.swift; sourceTree = "<group>"; };
+		B3163F472A05391500034D44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3163F492A05391700034D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3163F4C2A05391700034D44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3163F512A05391800034D44 /* Kletterfit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kletterfit.xcdatamodel; sourceTree = "<group>"; };
+		B3163F572A05391800034D44 /* KletterfitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KletterfitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3163F5B2A05391800034D44 /* KletterfitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KletterfitTests.swift; sourceTree = "<group>"; };
+		B3163F612A05391800034D44 /* KletterfitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KletterfitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3163F652A05391800034D44 /* KletterfitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KletterfitUITests.swift; sourceTree = "<group>"; };
+		B3163F672A05391800034D44 /* KletterfitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KletterfitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B33ED7FE2A4251B700198463 /* ExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard.swift; sourceTree = "<group>"; };
+		B39448392A1E42A00043B915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F927FF6B2A41C0D10011858D /* TrainingFormSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingFormSectionView.swift; sourceTree = "<group>"; };
+		F927FF6D2A41C1300011858D /* ExerciseSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSectionView.swift; sourceTree = "<group>"; };
+		F927FF6F2A41C14D0011858D /* AddedExercisesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedExercisesSectionView.swift; sourceTree = "<group>"; };
+		F927FF732A41DB6B0011858D /* ViewChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChartItem.swift; sourceTree = "<group>"; };
+		F927FF792A41F07E0011858D /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
+		F927FF7B2A41F8170011858D /* ExerciseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRow.swift; sourceTree = "<group>"; };
+		F93C372D2A4185D0008300FF /* ExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
+		F93C37362A41870D008300FF /* StatisticItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticItem.swift; sourceTree = "<group>"; };
+		F93C37392A418750008300FF /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F93C373D2A41877D008300FF /* KletterfitDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KletterfitDataController.swift; sourceTree = "<group>"; };
+		F93C37402A41879C008300FF /* GradientButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonItem.swift; sourceTree = "<group>"; };
+		F93C37422A4187B3008300FF /* InfoFitnessIconsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFitnessIconsViewModel.swift; sourceTree = "<group>"; };
+		F93C37532A418E6A008300FF /* TrainingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCard.swift; sourceTree = "<group>"; };
+		F93C37552A418EBC008300FF /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		F93C37572A419039008300FF /* AddRouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRouteView.swift; sourceTree = "<group>"; };
+		F93C37582A419039008300FF /* ClimbingOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimbingOverView.swift; sourceTree = "<group>"; };
+		F93C37592A419039008300FF /* ClimbingDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimbingDetailView.swift; sourceTree = "<group>"; };
+		F93C375A2A419039008300FF /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F93C37642A4190FD008300FF /* FitnessOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessOverview.swift; sourceTree = "<group>"; };
+		F93C37692A4194AF008300FF /* TrainingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsView.swift; sourceTree = "<group>"; };
+		F93C376A2A4194AF008300FF /* TrainingDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingDetailView.swift; sourceTree = "<group>"; };
+		F93C376D2A4194C3008300FF /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		F93C376E2A4194C3008300FF /* ExerciseDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		F93C376F2A4194C3008300FF /* ExerciseOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseOverView.swift; sourceTree = "<group>"; };
+		F93C37732A4194D4008300FF /* FitnessStatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessStatisticsView.swift; sourceTree = "<group>"; };
+		F93C37752A419559008300FF /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		F93C37772A41957A008300FF /* ClimbingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingCard.swift; sourceTree = "<group>"; };
+		F93C37792A4195AB008300FF /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		F93C377B2A4195BE008300FF /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		F93C37802A419D8A008300FF /* ClimbingStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStatisticView.swift; sourceTree = "<group>"; };
+		F93C37842A41A13F008300FF /* ImagePickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerTests.swift; sourceTree = "<group>"; };
+		F93C378A2A41BC78008300FF /* AddTrainingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrainingSheetView.swift; sourceTree = "<group>"; };
+		F93C378C2A41BD12008300FF /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		F96BB03D2A423BF90077FB97 /* TrainingDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDetailViewModel.swift; sourceTree = "<group>"; };
+		F96F094D2A424B4C002BC7C7 /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
+		F98FF84A2A0BA26900D156E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F98FF84B2A0BA38500D156E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3163F3F2A05391500034D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3163F542A05391800034D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3163F5E2A05391800034D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3163F392A05391500034D44 = {
+			isa = PBXGroup;
+			children = (
+				F98FF84A2A0BA26900D156E3 /* README.md */,
+				F98FF84B2A0BA38500D156E3 /* .gitignore */,
+				B3163F442A05391500034D44 /* Kletterfit */,
+				B3163F5A2A05391800034D44 /* KletterfitTests */,
+				B3163F642A05391800034D44 /* KletterfitUITests */,
+				B3163F432A05391500034D44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3163F432A05391500034D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3163F422A05391500034D44 /* Kletterfit.app */,
+				B3163F572A05391800034D44 /* KletterfitTests.xctest */,
+				B3163F612A05391800034D44 /* KletterfitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3163F442A05391500034D44 /* Kletterfit */ = {
+			isa = PBXGroup;
+			children = (
+				B39448392A1E42A00043B915 /* Info.plist */,
+				B3163F452A05391500034D44 /* KletterfitApp.swift */,
+				B3163F472A05391500034D44 /* ContentView.swift */,
+				B3AD26792A0A7ACB005F6A3A /* Views */,
+				F93C372A2A41856A008300FF /* Models */,
+				F93C372B2A41857F008300FF /* ViewModels */,
+				F93C37312A4186CB008300FF /* Services */,
+				F93C37382A418721008300FF /* Extensions */,
+				F93C372C2A41859A008300FF /* Helpers */,
+				B3163F492A05391700034D44 /* Assets.xcassets */,
+				B3163F502A05391800034D44 /* Kletterfit.xcdatamodeld */,
+				B3163F4B2A05391700034D44 /* Preview Content */,
+			);
+			path = Kletterfit;
+			sourceTree = "<group>";
+		};
+		B3163F4B2A05391700034D44 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3163F4C2A05391700034D44 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3163F5A2A05391800034D44 /* KletterfitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37842A41A13F008300FF /* ImagePickerTests.swift */,
+				B3163F5B2A05391800034D44 /* KletterfitTests.swift */,
+			);
+			path = KletterfitTests;
+			sourceTree = "<group>";
+		};
+		B3163F642A05391800034D44 /* KletterfitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3163F652A05391800034D44 /* KletterfitUITests.swift */,
+				B3163F672A05391800034D44 /* KletterfitUITestsLaunchTests.swift */,
+				F96F094D2A424B4C002BC7C7 /* FitnessAppUITests.swift */,
+			);
+			path = KletterfitUITests;
+			sourceTree = "<group>";
+		};
+		B3AD26792A0A7ACB005F6A3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37632A4190DC008300FF /* Fitness */,
+				F93C374A2A418DA4008300FF /* Climbing */,
+				F93C37482A418D75008300FF /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F927FF6A2A41C0B90011858D /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				F927FF6B2A41C0D10011858D /* TrainingFormSectionView.swift */,
+				F927FF6D2A41C1300011858D /* ExerciseSectionView.swift */,
+				F927FF6F2A41C14D0011858D /* AddedExercisesSectionView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		F93C372A2A41856A008300FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37362A41870D008300FF /* StatisticItem.swift */,
+				F93C37402A41879C008300FF /* GradientButtonItem.swift */,
+				F927FF732A41DB6B0011858D /* ViewChartItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F93C372B2A41857F008300FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F93C372D2A4185D0008300FF /* ExerciseViewModel.swift */,
+				F93C37422A4187B3008300FF /* InfoFitnessIconsViewModel.swift */,
+				F93C378C2A41BD12008300FF /* TrainingViewModel.swift */,
+				F96BB03D2A423BF90077FB97 /* TrainingDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F93C372C2A41859A008300FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F93C375A2A419039008300FF /* ImagePicker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F93C37312A4186CB008300FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F93C373D2A41877D008300FF /* KletterfitDataController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F93C37382A418721008300FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37392A418750008300FF /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F93C37482A418D75008300FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F93C377B2A4195BE008300FF /* CircularProgressBar.swift */,
+				F93C37792A4195AB008300FF /* SearchBar.swift */,
+				F93C37532A418E6A008300FF /* TrainingCard.swift */,
+				F93C37552A418EBC008300FF /* GradientButton.swift */,
+				F93C37752A419559008300FF /* Checkmark.swift */,
+				F93C37772A41957A008300FF /* ClimbingCard.swift */,
+				F927FF792A41F07E0011858D /* MultipleSelectionRow.swift */,
+				F927FF7B2A41F8170011858D /* ExerciseRow.swift */,
+				B33ED7FE2A4251B700198463 /* ExerciseCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F93C374A2A418DA4008300FF /* Climbing */ = {
+			isa = PBXGroup;
+			children = (
+				F93C377D2A419B8F008300FF /* Statistics */,
+				F93C37572A419039008300FF /* AddRouteView.swift */,
+				F93C37592A419039008300FF /* ClimbingDetailView.swift */,
+				F93C37582A419039008300FF /* ClimbingOverView.swift */,
+			);
+			path = Climbing;
+			sourceTree = "<group>";
+		};
+		F93C37632A4190DC008300FF /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37682A419118008300FF /* Statistics */,
+				F93C37672A41910A008300FF /* Trainings */,
+				F93C37662A419100008300FF /* Exercises */,
+				F93C37642A4190FD008300FF /* FitnessOverview.swift */,
+			);
+			path = Fitness;
+			sourceTree = "<group>";
+		};
+		F93C37662A419100008300FF /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				F93C376D2A4194C3008300FF /* AddExerciseView.swift */,
+				F93C376E2A4194C3008300FF /* ExerciseDetailView.swift */,
+				F93C376F2A4194C3008300FF /* ExerciseOverView.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		F93C37672A41910A008300FF /* Trainings */ = {
+			isa = PBXGroup;
+			children = (
+				F927FF6A2A41C0B90011858D /* Sections */,
+				F93C376A2A4194AF008300FF /* TrainingDetailView.swift */,
+				F93C37692A4194AF008300FF /* TrainingsView.swift */,
+				F93C378A2A41BC78008300FF /* AddTrainingSheetView.swift */,
+			);
+			path = Trainings;
+			sourceTree = "<group>";
+		};
+		F93C37682A419118008300FF /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37732A4194D4008300FF /* FitnessStatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		F93C377D2A419B8F008300FF /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				F93C37802A419D8A008300FF /* ClimbingStatisticView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3163F412A05391500034D44 /* Kletterfit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3163F6B2A05391800034D44 /* Build configuration list for PBXNativeTarget "Kletterfit" */;
+			buildPhases = (
+				B3163F3E2A05391500034D44 /* Sources */,
+				B3163F3F2A05391500034D44 /* Frameworks */,
+				B3163F402A05391500034D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kletterfit;
+			productName = Kletterfit;
+			productReference = B3163F422A05391500034D44 /* Kletterfit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3163F562A05391800034D44 /* KletterfitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3163F6E2A05391800034D44 /* Build configuration list for PBXNativeTarget "KletterfitTests" */;
+			buildPhases = (
+				B3163F532A05391800034D44 /* Sources */,
+				B3163F542A05391800034D44 /* Frameworks */,
+				B3163F552A05391800034D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3163F592A05391800034D44 /* PBXTargetDependency */,
+			);
+			name = KletterfitTests;
+			productName = KletterfitTests;
+			productReference = B3163F572A05391800034D44 /* KletterfitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3163F602A05391800034D44 /* KletterfitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3163F712A05391800034D44 /* Build configuration list for PBXNativeTarget "KletterfitUITests" */;
+			buildPhases = (
+				B3163F5D2A05391800034D44 /* Sources */,
+				B3163F5E2A05391800034D44 /* Frameworks */,
+				B3163F5F2A05391800034D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3163F632A05391800034D44 /* PBXTargetDependency */,
+			);
+			name = KletterfitUITests;
+			productName = KletterfitUITests;
+			productReference = B3163F612A05391800034D44 /* KletterfitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3163F3A2A05391500034D44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B3163F412A05391500034D44 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					B3163F562A05391800034D44 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = B3163F412A05391500034D44;
+					};
+					B3163F602A05391800034D44 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = B3163F412A05391500034D44;
+					};
+				};
+			};
+			buildConfigurationList = B3163F3D2A05391500034D44 /* Build configuration list for PBXProject "Kletterfit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3163F392A05391500034D44;
+			productRefGroup = B3163F432A05391500034D44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3163F412A05391500034D44 /* Kletterfit */,
+				B3163F562A05391800034D44 /* KletterfitTests */,
+				B3163F602A05391800034D44 /* KletterfitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3163F402A05391500034D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3163F4D2A05391700034D44 /* Preview Assets.xcassets in Resources */,
+				B3163F4A2A05391700034D44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3163F552A05391800034D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3163F5F2A05391800034D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3163F3E2A05391500034D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F927FF6E2A41C1300011858D /* ExerciseSectionView.swift in Sources */,
+				F93C37722A4194C3008300FF /* ExerciseOverView.swift in Sources */,
+				F93C376C2A4194AF008300FF /* TrainingDetailView.swift in Sources */,
+				F96BB03E2A423BF90077FB97 /* TrainingDetailViewModel.swift in Sources */,
+				F93C375F2A419039008300FF /* ImagePicker.swift in Sources */,
+				F93C377C2A4195BE008300FF /* CircularProgressBar.swift in Sources */,
+				F93C37712A4194C3008300FF /* ExerciseDetailView.swift in Sources */,
+				F93C373A2A418750008300FF /* DateExtension.swift in Sources */,
+				F93C37562A418EBC008300FF /* GradientButton.swift in Sources */,
+				F93C37652A4190FD008300FF /* FitnessOverview.swift in Sources */,
+				F93C372E2A4185D0008300FF /* ExerciseViewModel.swift in Sources */,
+				F93C37782A41957A008300FF /* ClimbingCard.swift in Sources */,
+				F93C373E2A41877D008300FF /* KletterfitDataController.swift in Sources */,
+				F93C37412A41879C008300FF /* GradientButtonItem.swift in Sources */,
+				F927FF7A2A41F07E0011858D /* MultipleSelectionRow.swift in Sources */,
+				F93C375D2A419039008300FF /* ClimbingOverView.swift in Sources */,
+				F93C37742A4194D4008300FF /* FitnessStatisticsView.swift in Sources */,
+				B33ED7FF2A4251B700198463 /* ExerciseCard.swift in Sources */,
+				F93C37432A4187B3008300FF /* InfoFitnessIconsViewModel.swift in Sources */,
+				F927FF742A41DB6B0011858D /* ViewChartItem.swift in Sources */,
+				F927FF702A41C14D0011858D /* AddedExercisesSectionView.swift in Sources */,
+				F93C377A2A4195AB008300FF /* SearchBar.swift in Sources */,
+				F93C37812A419D8A008300FF /* ClimbingStatisticView.swift in Sources */,
+				F93C378B2A41BC78008300FF /* AddTrainingSheetView.swift in Sources */,
+				F927FF7C2A41F8170011858D /* ExerciseRow.swift in Sources */,
+				B3163F522A05391800034D44 /* Kletterfit.xcdatamodeld in Sources */,
+				F93C37762A419559008300FF /* Checkmark.swift in Sources */,
+				B3163F482A05391500034D44 /* ContentView.swift in Sources */,
+				F927FF6C2A41C0D10011858D /* TrainingFormSectionView.swift in Sources */,
+				F93C37372A41870D008300FF /* StatisticItem.swift in Sources */,
+				B3163F462A05391500034D44 /* KletterfitApp.swift in Sources */,
+				F93C376B2A4194AF008300FF /* TrainingsView.swift in Sources */,
+				F93C37542A418E6A008300FF /* TrainingCard.swift in Sources */,
+				F93C375E2A419039008300FF /* ClimbingDetailView.swift in Sources */,
+				F93C37702A4194C3008300FF /* AddExerciseView.swift in Sources */,
+				F93C378D2A41BD12008300FF /* TrainingViewModel.swift in Sources */,
+				F93C375C2A419039008300FF /* AddRouteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3163F532A05391800034D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3163F5C2A05391800034D44 /* KletterfitTests.swift in Sources */,
+				F93C37852A41A13F008300FF /* ImagePickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3163F5D2A05391800034D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3163F682A05391800034D44 /* KletterfitUITestsLaunchTests.swift in Sources */,
+				B3163F662A05391800034D44 /* KletterfitUITests.swift in Sources */,
+				F96F094E2A424B4C002BC7C7 /* FitnessAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3163F592A05391800034D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3163F412A05391500034D44 /* Kletterfit */;
+			targetProxy = B3163F582A05391800034D44 /* PBXContainerItemProxy */;
+		};
+		B3163F632A05391800034D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3163F412A05391500034D44 /* Kletterfit */;
+			targetProxy = B3163F622A05391800034D44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3163F692A05391800034D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3163F6A2A05391800034D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3163F6C2A05391800034D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kletterfit/Preview Content\"";
+				DEVELOPMENT_TEAM = 77CBQ5W9CR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kletterfit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kletterfit;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Wir benutzen die Kamera um tolle Dinge zu tun";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdmstuttgart.fitnesswarrior;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3163F6D2A05391800034D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kletterfit/Preview Content\"";
+				DEVELOPMENT_TEAM = 77CBQ5W9CR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kletterfit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kletterfit;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Wir benutzen die Kamera um tolle Dinge zu tun";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdmstuttgart.fitnesswarrior;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3163F6F2A05391800034D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CBQ5W9CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdmstuttgart.KletterfitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kletterfit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kletterfit";
+			};
+			name = Debug;
+		};
+		B3163F702A05391800034D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CBQ5W9CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdmstuttgart.KletterfitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kletterfit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kletterfit";
+			};
+			name = Release;
+		};
+		B3163F722A05391800034D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CBQ5W9CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdmstuttgart.KletterfitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kletterfit;
+			};
+			name = Debug;
+		};
+		B3163F732A05391800034D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77CBQ5W9CR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hdmstuttgart.KletterfitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kletterfit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3163F3D2A05391500034D44 /* Build configuration list for PBXProject "Kletterfit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3163F692A05391800034D44 /* Debug */,
+				B3163F6A2A05391800034D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3163F6B2A05391800034D44 /* Build configuration list for PBXNativeTarget "Kletterfit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3163F6C2A05391800034D44 /* Debug */,
+				B3163F6D2A05391800034D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3163F6E2A05391800034D44 /* Build configuration list for PBXNativeTarget "KletterfitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3163F6F2A05391800034D44 /* Debug */,
+				B3163F702A05391800034D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3163F712A05391800034D44 /* Build configuration list for PBXNativeTarget "KletterfitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3163F722A05391800034D44 /* Debug */,
+				B3163F732A05391800034D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3163F502A05391800034D44 /* Kletterfit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3163F512A05391800034D44 /* Kletterfit.xcdatamodel */,
+			);
+			currentVersion = B3163F512A05391800034D44 /* Kletterfit.xcdatamodel */;
+			path = Kletterfit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B3163F3A2A05391500034D44 /* Project object */;
+}
